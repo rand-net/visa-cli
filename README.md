@@ -2,8 +2,8 @@
 
 A python script to lookup [Passport Index Dataset](https://github.com/ilyankou/passport-index-dataset)
 
-![PyPI](https://img.shields.io/pypi/v/khan-dl?style=flat-square)
-![GitHub](https://img.shields.io/github/license/rand-net/khan-dl?style=flat-square)
+![PyPI](https://img.shields.io/pypi/v/visa-cli?style=flat-square)
+![GitHub](https://img.shields.io/github/license/rand-net/visa-cli?style=flat-square)
 
 ## Installation
 
