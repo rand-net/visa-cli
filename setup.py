@@ -9,8 +9,8 @@ README = (HERE / "README.md").read_text()
 setup(
     name="visa-cli",
     version="0.0.1",
-    description="CLI tool to lookup Visa status for Countries"
-    long_description=readme,
+    description="CLI tool to lookup Visa status for Countries",
+    long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/rand-net/visa-cli",
     author="rand-net",
