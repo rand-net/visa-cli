@@ -5,10 +5,7 @@ A python script to lookup [Passport Index Dataset](https://github.com/ilyankou/p
 ## Installation
 
 ```
-git clone
-pip install -r requirements.txt
-chmod +x visa-cli
-visa-cli -f  Sweden
+pip install visa-cli
 
 ```
 
@@ -36,21 +33,27 @@ optional arguments:
 
 * Lookup  all Countries offering visa-free travel given a resident Country.
 ```
-visa-cli Germany -f
+visa-cli -f Germany
 
 ```
 * Lookup all Countries requiring visa given a resident Country.
 ```
-visa-cli   China -r
+visa-cli -r China
 
 ```
 * Lookup all Countries offering visa-on-arrival given a resident Country.
 ```
-visa-cli  Vatican -o
+visa-cli -o Vatican
 
 ```
 * Lookup all Countries offering ETA(Electronic Travel Authority) given a resident Country.
 ```
-visa-cli  Vatican -e
+visa-cli -e Vatican
+
+```
+
+* Lookup on an interactive prompt
+```
+visa-cli -i Vatican
 
 ```
