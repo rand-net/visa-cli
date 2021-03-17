@@ -23,6 +23,6 @@ setup(
     packages=["visa_cli"],
     include_package_data=True,
     entry_points={"console_scripts": ["visa-cli = visa_cli.__init__:main"]},
-    install_requires=["art", "prompt-toolkit", "requests"],
+    install_requires=["art", "prompt-toolkit", "requests", "pandas"],
     keywords=["awesome list", "awesome", "resources", "lists", "mammoths"],
 )
