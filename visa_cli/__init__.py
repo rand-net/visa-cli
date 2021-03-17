@@ -6,7 +6,7 @@ import sys
 pd.set_option("display.max_rows", None)
 
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 def main(argv=None):
