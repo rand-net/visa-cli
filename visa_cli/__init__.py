@@ -7,7 +7,7 @@ import sys
 pd.set_option("display.max_rows", None)
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def main(argv=None):
@@ -17,6 +17,9 @@ def main(argv=None):
         "resident_country", type=str, help="Current Resident Country",
     )
 
+    parser.add_argument(
+        "-d", "--destination-country", help="Destination Country",
+    )
     parser.add_argument(
         "-f",
         "--visa-free",
@@ -72,31 +75,48 @@ def main(argv=None):
         dest="interactive_prompt",
         action="store_true",
     )
+
+    parser.add_argument(
+        "-l",
+        "--resident-countries",
+        help='A list of Resident Countries in addition to the Current Resident Country. \n Format argument in a comma-delimited string "Israel, Russia, China"',
+        # dest="countries_list",
+        # action="store_true",
+    )
     args = parser.parse_args()
 
     # https://raw.githubusercontent.com/ilyankou/passport-index-dataset/master/passport-index-matrix.csv
+
     current_residency = Visa_Status(
         "https://raw.githubusercontent.com/ilyankou/passport-index-dataset/master/passport-index-matrix.csv",
         args.resident_country.title(),
     )
 
+    if not args.resident_countries and args.destination_country:
+        current_residency.get_dest_country_status(args.destination_country)
+
     if args.visa_free:
-        print(current_residency.get_status_vf())
+        current_residency.get_status_vf()
 
     if args.visa_required:
-        print(current_residency.get_status_vr())
+        current_residency.get_status_vr()
 
     if args.visa_voa:
-        print(current_residency.get_status_voa())
+        current_residency.get_status_voa()
 
     if args.visa_eta:
-        print(current_residency.get_status_eta())
+        current_residency.get_status_eta()
 
     if args.visa_free_days:
-        print(current_residency.get_status_vfe())
+        current_residency.get_status_vfe()
 
     if args.visa_covid_ban:
-        print(current_residency.get_covid_ban())
+        current_residency.get_covid_ban()
 
     if args.interactive_prompt:
         current_residency.interactive_prompt()
+
+    if args.resident_countries and args.destination_country:
+        current_residency.get_group_status(
+            args.resident_countries, args.destination_country
+        )
