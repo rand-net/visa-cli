@@ -6,7 +6,7 @@ import sys
 pd.set_option("display.max_rows", None)
 
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 
 def main(argv=None):
@@ -76,7 +76,7 @@ def main(argv=None):
     # https://raw.githubusercontent.com/ilyankou/passport-index-dataset/master/passport-index-matrix.csv
     current_residency = Visa_Status(
         "https://raw.githubusercontent.com/ilyankou/passport-index-dataset/master/passport-index-matrix.csv",
-        args.resident_country,
+        args.resident_country.title(),
     )
 
     if args.visa_free:
