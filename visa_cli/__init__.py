@@ -1,4 +1,4 @@
-from visa_status import Visa_Status
+from .visa_status import Visa_Status
 from tabulate import tabulate
 import pandas as pd
 import argparse
@@ -7,7 +7,7 @@ import sys
 pd.set_option("display.max_rows", None)
 
 
-__version__ = "0.0.5"
+__version__ = "0.1.0"
 
 
 def main(argv=None):
