@@ -44,7 +44,7 @@ optional arguments:
 
 * Lookup on an interactive prompt
 ```
-visa-cli -i Vatican
+$ visa-cli -i Vatican
 
 __     __ ___  ____      _             ____  _      ___
 \ \   / /|_ _|/ ___|    / \           / ___|| |    |_ _|
@@ -81,7 +81,7 @@ Destination Country:
 * Lookup for a particular resident and destination Country.
 
 ```
-visa-cli  Vatican -d Russia
+$ visa-cli  Vatican -d Russia
 
 __     __ ___  ____      _             ____  _      ___
 \ \   / /|_ _|/ ___|    / \           / ___|| |    |_ _|
