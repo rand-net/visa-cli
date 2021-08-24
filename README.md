@@ -1,6 +1,7 @@
 # visa-cli
 
-A python script to lookup [Passport Index Dataset](https://github.com/ilyankou/passport-index-dataset)
+A CLI app to lookup [Passport Index](https://www.passportindex.org) based on
+https://github.com/ilyankou/passport-index-dataset
 
 ![PyPI](https://img.shields.io/pypi/v/visa-cli?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/rand-net/visa-cli?style=flat-square)
