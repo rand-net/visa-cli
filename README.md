@@ -70,7 +70,7 @@ Destination Country:Romania
 90
 
 
-Destination Country:
+Destination Country:_
                      Albania
                      Algeria
                      Andorra
@@ -92,11 +92,11 @@ __     __ ___  ____      _             ____  _      ___
 
 Downloading Visa data...
 
-+---+------------------+---------------------+-----------+
-|   | Resident Country | Destination Country |  Status   |
-+---+------------------+---------------------+-----------+
-| 0 |     Vatican      |       Russia        | covid ban |
-+---+------------------+---------------------+-----------+
+╒═════╤═══════════════════════╤═══════════╕
+│     │ Destination Country   │ Status    │
+╞═════╪═══════════════════════╪═══════════╡
+│ 144 │ Russia                │ covid ban │
+╘═════╧═══════════════════════╧═══════════╛
 
 ```
 
@@ -117,14 +117,16 @@ Downloading Visa data...
 Visa Status for various Resident Countries
 
 
-
-+---+------------------+---------------------+-----------+
-|   | Resident Country | Destination Country |  Status   |
-+---+------------------+---------------------+-----------+
-| 0 |      Israel      |       Canada        | covid ban |
-| 1 |     Germany      |       Canada        | covid ban |
-| 2 |     Austria      |       Canada        | covid ban |
-| 3 |      India       |       Canada        | covid ban |
-+---+------------------+---------------------+-----------+
+╒════╤════════════════════╤═══════════════════════╤═══════════╕
+│    │ Resident Country   │ Destination Country   │ Status    │
+╞════╪════════════════════╪═══════════════════════╪═══════════╡
+│  0 │ Israel             │ Canada                │ covid ban │
+├────┼────────────────────┼───────────────────────┼───────────┤
+│  1 │ Germany            │ Canada                │ covid ban │
+├────┼────────────────────┼───────────────────────┼───────────┤
+│  2 │ Austria            │ Canada                │ covid ban │
+├────┼────────────────────┼───────────────────────┼───────────┤
+│  3 │ India              │ Canada                │ covid ban │
+╘════╧════════════════════╧═══════════════════════╧═══════════╛
 
 ```
